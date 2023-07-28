@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    width: 100lvw;
+    height: 100vh;
+    background-color: rgba(231, 239, 249, 0.9);
+    padding: 15px 50px;
+}
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+ nav .wrapper{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .signupFormContainer {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: none;
+    }
+
+    /* Style form fields */
+    .signupFormContainer input[type="text"],
+    .signupFormContainer input[type="email"],
+    .signupFormContainer input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        display: none;
+    }
+
+    /* Style the submit button */
+    .signupFormContainerr input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    /* Style the link for login page */
+    .signupFormContainer a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+.wrapper span{
+    font-weight: 900;
+    font-size: larger;
+    padding: 15px;
+}
+.wrapper button {
+    padding: 5px;
+    border: 2px solid rgb(254, 254, 254);
+    background-color: rgba(231, 239, 249, 0.9);
+    margin: 15px;
+}
+.wrapper ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.description {
+    text-align: center;
+    padding: 50px;
+}
+.description h3 {
+    font-size: 40px;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+
+}
+.btn-description {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+
+}
+.btn-description p {
+    color: blue;
+    text-decoration: underline;
+}
+.job-description {
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.job-description1 {
+    background-color: blue;
+    border-radius: 15px;
+    padding: 8px;
+    color: whitesmoke;
+}
+.svg-container{
+    display: flex;
+    gap: 10px;
+}
+.job-description2 {
+    background-color: azure;
+    border-radius: 15px;
+    padding: 8px;
+
+}
+
+
+.price-description {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Featured {
+    padding: 15px 145px;
+    font-weight: 900;
+
+}
+
+.hamburger {
+    height: 20px;
+    width: 20px;
+    margin-top: 8px;
+    display: none;
+    cursor: pointer;
+}
+
+ @media screen and (max-width: 50rem){
+
+    .job-description {
+        display: grid;
+    }
+.wrapper img {
+    display: block;
+    
+}
+
+.wrapper ul {
+    display: none;
+}
+ul.active {
+    display: none;
+   
+}
+
+.wrapper button {
+    display: none;
+}
+ }
